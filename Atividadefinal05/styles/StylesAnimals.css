@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.animals {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.936), #879b9e);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 0 2% 0 10%;
+}
+
+.animals h1 {
+  font-size: 50px;
+
+  color: cornsilk;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+  font-weight: bold;
+}
+
+.animals p {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 1248px) {
+  .animals {
+    height: 200vh;
+  }
+}
+@media only screen and (max-width: 844px) {
+  .animals {
+    height: 270vh;
+  }
+}
+
+@media only screen and (max-width: 612px) {
+  .animals {
+    height: 320vh;
+  }
+}
+
+@media only screen and (max-width: 513px) {
+  .animals {
+    height: 370vh;
+  }
+}
+
+@media only screen and (max-width: 441px) {
+  .animals {
+    height: 440vh;
+  }
+}
+
+.animals .button {
+  margin-top: 15px;
+  text-align: center;
+  width: 160px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 20px;
+  border: 1px solid #fff;
+}

@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.plants {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#879b9e, rgba(0, 0, 0, 0.936));
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 0 2% 0 10%;
+}
+
+.plants h1 {
+  font-size: 50px;
+
+  color: cornsilk;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+  font-weight: bold;
+}
+
+.plants p {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 1248px) {
+  .plants {
+    height: 200vh;
+  }
+}
+@media only screen and (max-width: 844px) {
+  .plants {
+    height: 270vh;
+  }
+}
+
+@media only screen and (max-width: 612px) {
+  .plants {
+    height: 320vh;
+  }
+}
+
+@media only screen and (max-width: 513px) {
+  .plants {
+    height: 370vh;
+  }
+}
+
+@media only screen and (max-width: 441px) {
+  .plants {
+    height: 440vh;
+  }
+}
+
+.plants .button {
+  margin-top: 15px;
+  text-align: center;
+  width: 160px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 20px;
+  border: 1px solid #fff;
+}

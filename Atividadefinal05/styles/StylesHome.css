@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.First {
+  width: 100%;
+  height: 100vh;
+
+  background: linear-gradient(#879b9e, rgba(0, 0, 0, 0.3)),
+    url("../imgs/first_part.jpg") center / cover no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 0 5% 0 20%;
+}
+
+.First #h1 {
+  font-size: 50px;
+
+  color: cornsilk;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+  font-weight: bold;
+}
+
+.First #p {
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+
+  font-weight: lighter;
+}
+
+.First .button {
+  margin-top: 15px;
+  width: 160px;
+
+  text-align: center;
+
+  background-color: transparent;
+  color: #fff;
+  border-radius: 20px;
+
+  text-decoration: none;
+  padding: 20px;
+
+  border: 1px solid #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.First .button2 {
+  margin-top: 15px;
+  width: 160px;
+
+  text-align: center;
+
+  background-color: transparent;
+  color: #fff;
+  border-radius: 20px;
+
+  text-decoration: none;
+  padding: 20px;
+
+  border: 1px solid #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.First .button3 {
+  margin-top: 15px;
+  width: 160px;
+
+  text-align: center;
+
+  background-color: transparent;
+  color: #fff;
+  border-radius: 20px;
+
+  text-decoration: none;
+  padding: 20px;
+
+  border: 1px solid #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+main .text {
+  background-color: rgba(0, 0, 0, 0.936);
+  color: cornsilk;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 20vh;
+}
+
+.Second {
+  background: linear-gradient(rgba(0, 0, 0, 0.936), #879b9e);
+  height: 100vh;
+  gap: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .Second .card {
+  height: 60vh;
+  width: 400px;
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow: 2px 2px 20px #000;
+  transition: filter 3s ease, transform 0.7s ease;
+  filter: grayscale(100%);
+}
+
+main .Second .card:nth-child(1) {
+  background-image: url(../imgs/one.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .Second .card:nth-child(2) {
+  background-image: url(../imgs/two.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .Second .card:nth-child(3) {
+  background-image: url(../imgs/three.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .Second .card:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+
+.Third {
+  background: linear-gradient(#879b9e, rgba(0, 0, 0, 0.936));
+  height: 100vh;
+  width: 100%;
+  gap: 20px;
+
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 0 5% 0 20%;
+}
+.Third .div img {
+  height: 60vh;
+  border-radius: 40px;
+}
+
+.Third .div2 .h2 {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+}
+
+.Third .div2 .Poem {
+  color: rgb(183, 183, 183);
+  font-size: 20px;
+}
+
+.Third .div2 .By {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1237px) {
+  .Second {
+    height: 200vh;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .Second {
+    height: 250vh;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .Third .div img {
+    transform: scale(0.8);
+    width: 80%;
+    height: 80%;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .First {
+    height: 150vh;
+  }
+  main .Second {
+    height: 100vh;
+  }
+  main .Second .card {
+    width: 300px;
+    height: 300px;
+  }
+  .Third .div img {
+    transform: scale(0.8);
+    width: 80%;
+    height: 80%;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .First {
+    height: 175vh;
+  }
+  main .Second {
+    height: 100vh;
+  }
+  main .Second .card {
+    width: 175px;
+    height: 175px;
+  }
+  .Third .div img {
+    width: 80%;
+    height: 80%;
+    margin-left: 10px;
+  }
+
+  main .text {
+    display: flex;
+    align-content: center;
+  }
+}
+
+@media only screen and (min-width: 200px) {
+  .First {
+    height: 190vh;
+  }
+  .Third {
+    height: 100%;
+  }
+
+  .Third .div img {
+    height: 800px;
+    border-radius: 40px;
+  }
+}

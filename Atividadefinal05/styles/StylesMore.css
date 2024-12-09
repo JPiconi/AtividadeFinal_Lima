@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.More {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#879b9e, black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 2% 0 10%;
+}
+
+.More .button {
+  margin-top: 15px;
+  text-align: center;
+  width: 160px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 20px;
+  border: 1px solid #fff;
+}
+
+.More .H1 {
+  font-size: 50px;
+  color: cornsilk;
+}
+
+.More .P {
+  color: rgb(209, 209, 209);
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1248px) {
+  .More {
+    height: 200vh;
+  }
+}
+@media only screen and (max-width: 844px) {
+  .More {
+    height: 270vh;
+  }
+}
+
+@media only screen and (max-width: 612px) {
+  .More {
+    height: 320vh;
+  }
+}
+
+@media only screen and (max-width: 513px) {
+  .More {
+    height: 370vh;
+  }
+}
+
+@media only screen and (max-width: 441px) {
+  .More {
+    height: 440vh;
+  }
+}
